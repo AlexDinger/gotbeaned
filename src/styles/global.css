@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section h2 {
+  text-shadow: -3px 3px 0px #e6dbbd;
+}

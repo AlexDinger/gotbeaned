@@ -1,9 +1,11 @@
 import React from "react";
 
-const NavItem = ({ title }) => {
+const NavItem = ({ page }) => {
   return (
     <li>
-      <a href="#">{title}</a>
+      <a className="capitalize" href={`/${page}`}>
+        {page}
+      </a>
     </li>
   );
 };

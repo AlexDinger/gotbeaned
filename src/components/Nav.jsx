@@ -3,9 +3,12 @@ import React, { useState } from "react";
 import logo from "../images/logo.png";
 import NavMenu from "../components/NavMenu";
 
-const Shadow = () => {
+const Shadow = ({ setOpen }) => {
   return (
-    <div className="absolute top-0 left-0 bg-opacity-50 bg-black h-screen w-screen"></div>
+    <div
+      className="absolute top-0 left-0 bg-opacity-50 bg-black h-screen w-screen z-40"
+      onClick={() => setOpen(false)}
+    ></div>
   );
 };
 
@@ -20,12 +23,14 @@ const Nav = () => {
       >
         <FontAwesomeIcon icon="bars" size="lg" />
       </div>
-      <div className="h-10 flex-1"></div>
+      <div className="w-full h-full flex items-center justify-center">
+        <img src={logo} className="w-full " style={{ maxWidth: "8rem" }} />
+      </div>
       <div className="flex justify-center items-center h-full px-5 bg-tan text-bean-brown">
         <FontAwesomeIcon icon="shopping-cart" size="lg" />
       </div>
       <NavMenu in={isOpen} setOpen={setOpen} />
-      {isOpen ? <Shadow /> : ""}
+      {isOpen ? <Shadow setOpen={setOpen} /> : ""}
     </nav>
   );
 };

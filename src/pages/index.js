@@ -6,19 +6,12 @@ import {
   faShoppingCart,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-import Header from "../components/Header";
-import Page from "../components/Page";
-import HowTo from "../components/HowTo";
+import Home from "./home";
 
 library.add(fab, faBars, faShoppingCart, faTimes);
 
 const Index = () => {
-  return (
-    <Page>
-      <Header />
-      <HowTo />
-    </Page>
-  );
+  return <Home />;
 };
 
 export default Index;

@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { Transition } from "react-transition-group";
 import NavItem from "../components/NavItem";
 
-const pages = ["Home", "FAQ", "Products"];
-
 const NavMenu = ({ setOpen, in: isOpen }) => {
   const [isEntered, setEntered] = useState(false);
 
@@ -31,7 +29,7 @@ const NavMenu = ({ setOpen, in: isOpen }) => {
     >
       {(state) => (
         <aside
-          className="absolute top-0 h-screen bg-white w-52 flex flex-col text-black z-50"
+          className="absolute top-0 h-screen bg-white flex flex-col text-black z-50"
           style={{ ...defaultStyle, ...transitionStyles[state] }}
         >
           <div
@@ -47,9 +45,10 @@ const NavMenu = ({ setOpen, in: isOpen }) => {
           >
             <div className="p-5 flex flex-col h-full justify-between">
               <ul className="space-y-5 font-semibold text-4xl">
-                {pages.map((page, index) => {
-                  return <NavItem title={page} key={index} />;
-                })}
+                <NavItem page="home" />
+                <NavItem page="products" />
+                <NavItem page="support" />
+                <NavItem page="tracker" />
               </ul>
               <div className="space-y-3">
                 <h6 className="font-semibold text-center">

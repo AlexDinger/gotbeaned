@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-section h2 {
+.css-shadow h2 {
   text-shadow: -3px 3px 0px #e6dbbd;
+}
+
+.style-quote {
+  font-size: 5rem;
+  @apply hidden font-mono text-gray-600 absolute leading-none;
+}
+
+.quote-left {
+  @apply top-0 left-0;
+}
+
+.quote-right {
+  @apply right-0 top-0;
+}
+
+@screen sm {
+  .style-quote {
+    @apply block;
+  }
 }

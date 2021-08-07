@@ -9,7 +9,7 @@ const MailingListForm = () => {
       <p className="text-lg text-center mt-5">
         Sign up for our newsletter for news on future products and services!
       </p>
-      <form className="mt-10 w-full flex flex-row overflow-hidden rounded-sm shadow-xl">
+      <form className="mt-10 w-full flex flex-row overflow-hidden rounded-sm shadow-xl max-w-sm">
         <input
           name="mailing-email"
           type="email"

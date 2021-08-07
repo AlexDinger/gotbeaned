@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-bean-brown text-white md:px-52">
+    <footer className="w-full bg-bean-brown text-white">
       <MailingListForm />
       <div className="border-t-2 border-b-2 border-gray-600 flex md:flex-row flex-row items-center justify-around">
         <a href="#">
@@ -32,9 +32,9 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="py-4 px-10 pb-10 flex md:flex-row flex-col justify-between items-center space-y-5">
+      <div className="py-4 px-10 md:px-96 pb-10 flex md:flex-row flex-col justify-between items-center space-y-5 md:space-y-0">
         <p>&copy; 2021 GotBeaned. All Rights Reserved.</p>
-        <div className="w-full flex flex-row space-x-2 items-center justify-center">
+        <div className=" flex flex-row space-x-2 items-center justify-center">
           <FontAwesomeIcon icon={["fab", "cc-paypal"]} size="lg" />
           <FontAwesomeIcon icon={["fab", "cc-amex"]} size="lg" />
           <FontAwesomeIcon icon={["fab", "cc-amazon-pay"]} size="lg" />

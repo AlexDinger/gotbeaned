@@ -1,0 +1,34 @@
+Home
+    Nav
+    Header
+    Testimonials
+    Description
+    Order Now
+    Footer
+
+Products
+    Nav
+    Product
+    Footer
+
+Order Finder
+    Nav
+    Tracking Number Form
+        -Link to support page
+    Footer
+
+Support
+    Nav
+    Contact Info/Form
+        -Email link
+    Footer
+
+Cart
+    TBD
+
+
+-  MVP  -
+
+User can order one package of beans or multiple packages sent to different addresses. Mvp will accept payment and deliver address to me for shipping.
+
+
